@@ -1,3 +1,45 @@
+GIT
+  remote: https://github.com/ClearlyClaire/cose-ruby.git
+  revision: c36f4268c7e0f68bac25b8cf2bb7e7a37e0240a7
+  ref: c36f4268c7e0f68bac25b8cf2bb7e7a37e0240a7
+  specs:
+    cose (1.2.0)
+      cbor (~> 0.5.9)
+      openssl-signature_algorithm (~> 1.0)
+
+GIT
+  remote: https://github.com/ClearlyClaire/openssl-signature_algorithm.git
+  revision: 724f325b724b6e2a23ac0b5aa42fb36e3394109a
+  ref: 724f325b724b6e2a23ac0b5aa42fb36e3394109a
+  specs:
+    openssl-signature_algorithm (1.1.1)
+      openssl (> 2.0, < 3.1)
+
+GIT
+  remote: https://github.com/ClearlyClaire/tpm-key_attestation.git
+  revision: 1cd9826c9104d8547b3a8d808faa554a887ea2b2
+  ref: 1cd9826c9104d8547b3a8d808faa554a887ea2b2
+  specs:
+    tpm-key_attestation (0.10.0)
+      bindata (~> 2.4)
+      openssl (> 2.0, < 3.1)
+      openssl-signature_algorithm (~> 1.0)
+
+GIT
+  remote: https://github.com/ClearlyClaire/webauthn-ruby.git
+  revision: ba3028a0a773e5c248c230339d27db422a9e29f8
+  ref: ba3028a0a773e5c248c230339d27db422a9e29f8
+  specs:
+    webauthn (2.5.1)
+      android_key_attestation (~> 0.3.0)
+      awrence (~> 1.1)
+      bindata (~> 2.4)
+      cbor (~> 0.5.9)
+      cose (~> 1.1)
+      openssl (>= 2.2, < 3.1)
+      safety_net_attestation (~> 0.4.0)
+      tpm-key_attestation (~> 0.10.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -79,7 +121,7 @@ GEM
     attr_encrypted (3.1.0)
       encryptor (~> 3.0.0)
     attr_required (1.0.1)
-    awrence (1.1.1)
+    awrence (1.2.1)
     aws-eventstream (1.2.0)
     aws-partitions (1.587.0)
     aws-sdk-core (3.130.2)
@@ -167,9 +209,6 @@ GEM
     color_diff (0.1)
     concurrent-ruby (1.1.10)
     connection_pool (2.2.5)
-    cose (1.0.0)
-      cbor (~> 0.5.9)
-      openssl-signature_algorithm (~> 0.4.0)
     crack (0.4.5)
       rexml
     crass (1.0.6)
@@ -436,8 +475,7 @@ GEM
       validate_email
       validate_url
       webfinger (>= 1.0.1)
-    openssl (2.2.0)
-    openssl-signature_algorithm (0.4.0)
+    openssl (3.0.0)
     orm_adapter (0.5.0)
     ox (2.14.11)
     parallel (1.22.1)
@@ -598,7 +636,6 @@ GEM
     scenic (1.6.0)
       activerecord (>= 4.0.0)
       railties (>= 4.0.0)
-    securecompare (1.0.0)
     semantic_range (3.0.0)
     sidekiq (6.4.1)
       connection_pool (>= 2.2.2)
@@ -654,9 +691,6 @@ GEM
       climate_control (>= 0.0.3, < 1.0)
     thor (1.2.1)
     tilt (2.0.10)
-    tpm-key_attestation (0.9.0)
-      bindata (~> 2.4)
-      openssl-signature_algorithm (~> 0.4.0)
     tty-color (0.6.0)
     tty-cursor (0.7.1)
     tty-prompt (0.23.1)
@@ -687,16 +721,6 @@ GEM
       public_suffix
     warden (1.2.9)
       rack (>= 2.0.9)
-    webauthn (3.0.0.alpha1)
-      android_key_attestation (~> 0.3.0)
-      awrence (~> 1.1)
-      bindata (~> 2.4)
-      cbor (~> 0.5.9)
-      cose (~> 1.0)
-      openssl (~> 2.0)
-      safety_net_attestation (~> 0.4.0)
-      securecompare (~> 1.0)
-      tpm-key_attestation (~> 0.9.0)
     webfinger (1.2.0)
       activesupport
       httpclient (>= 2.4)
@@ -749,6 +773,7 @@ DEPENDENCIES
   color_diff (~> 0.1)
   concurrent-ruby
   connection_pool
+  cose!
   devise (~> 4.8)
   devise-two-factor (~> 4.0)
   devise_pam_authenticatable2 (~> 9.2)
@@ -793,6 +818,7 @@ DEPENDENCIES
   omniauth-cas (~> 2.0)
   omniauth-rails_csrf_protection (~> 0.1)
   omniauth-saml (~> 1.10)
+  openssl-signature_algorithm!
   ox (~> 2.14)
   parslet
   pg (~> 1.3)
@@ -838,10 +864,11 @@ DEPENDENCIES
   stoplight (~> 3.0.0)
   strong_migrations (~> 0.7)
   thor (~> 1.2)
+  tpm-key_attestation!
   tty-prompt (~> 0.23)
   twitter-text (~> 3.1.0)
   tzinfo-data (~> 1.2022)
-  webauthn (~> 3.0.0.alpha1)
+  webauthn!
   webmock (~> 3.14)
   webpacker (~> 5.4)
   webpush (~> 0.3)
