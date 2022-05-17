@@ -40,6 +40,15 @@ GIT
       safety_net_attestation (~> 0.4.0)
       tpm-key_attestation (~> 0.10.0)
 
+GIT
+  remote: https://github.com/ClearlyClaire/webpush.git
+  revision: 878a6bd70cbc46c26ce369759ffc4332de71e02b
+  ref: 878a6bd70cbc46c26ce369759ffc4332de71e02b
+  specs:
+    webpush (1.1.0)
+      hkdf (~> 0.2)
+      jwt (~> 2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -733,9 +742,6 @@ GEM
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
-    webpush (0.3.8)
-      hkdf (~> 0.2)
-      jwt (~> 2.0)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -871,5 +877,5 @@ DEPENDENCIES
   webauthn!
   webmock (~> 3.14)
   webpacker (~> 5.4)
-  webpush (~> 0.3)
+  webpush!
   xorcist (~> 1.1)
