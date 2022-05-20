@@ -42,10 +42,10 @@ GIT
 
 GIT
   remote: https://github.com/ClearlyClaire/webpush.git
-  revision: 878a6bd70cbc46c26ce369759ffc4332de71e02b
-  ref: 878a6bd70cbc46c26ce369759ffc4332de71e02b
+  revision: f14a4d52e201128b1b00245d11b6de80d6cfdcd9
+  ref: f14a4d52e201128b1b00245d11b6de80d6cfdcd9
   specs:
-    webpush (1.1.0)
+    webpush (0.3.8)
       hkdf (~> 0.2)
       jwt (~> 2.0)
 
